@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Clone - Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1>Create Account</h1>
+      <form id="signupForm">
+        <input type="text" placeholder="First name" required />
+        <input type="text" placeholder="Last name" required />
+        <input type="text" placeholder="Mobile number or email" required />
+        <input type="password" placeholder="New password" required />
+        <button type="submit" class="create-btn">Sign Up</button>
+      </form>
+      <p><a href="index.html">Already have an account? Log In</a></p>
+    </div>
+  </div>
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Account created successfully (demo)');
+    });
+  </script>
+</body>
+</html>
